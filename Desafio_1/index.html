@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Index.css" />
+    <title>Title</title>
+  </head>
+  <body class="flex flex-col">
+    <div
+      id="box"
+      class="bg-[url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg')] bg-cover bg-center flex flex-col justify-center items-center p-5"
+    >
+
+        <h1 class="text-white pt-5 text-5xl font-black max-w-md text-center">
+            Presupuesto de Febrero 2024
+        </h1>
+        <h1 class="text-white my-5 text-5xl font-black max-w-md text-center">
+            5000
+        </h1>
+      <!-- Month and year would be a var to collect with javascript with a
+            date.now -->
+        <div
+            class="bg-black w-[20rem] border-2 p-5 my-5 flex space-x-20 justify-center"
+        >
+            <p class="text-white text-2xl font-black">Ingresos:</p>
+            <p class="text-white text-2xl font-black">2000</p>
+        </div>
+
+        <div
+            class="bg-white w-[20rem] border-2 border-black p-5 my-5 flex space-x-20 justify-center"
+        >
+            <div class="text-b text-2xl font-black">Egresos:</div>
+            <p class="text-black text-2xl font-black">2000</p>
+        </div>
+        <div class="p-5 my-5 flex space-x-5 items-center">
+            <h1 class="text-white text-2xl">Porcentaje de Gastos:</h1>
+
+            <p class="bg-black text-lg text-white py-2 px-4 rounded-lg">20%</p>
+        </div>
+        <!-- <h1 class="text-white text-2xl">1</h1> -->
+    </div>
+
+
+    <div class="flex bg-white justify-center items-center">
+
+
+        <div id="below-box" class="flex flex-row divide-x place-content-evenly">
+            <div id="primero" class="p-[4rem]">
+                <div id="header" class='flex items-center place-content-evenly my-5'>
+                    <div class="py-2 px-4 w-[2.5rem] rounded-full text-white bg-gray-400">+</div>
+                    <h1>Transacción</h1>
+                </div>
+                <select
+                    id="transactionType"
+                    name="transactionType"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 max-w-[15rem]"
+                >
+                    <option value="" disabled selected>Ingreso | Egreso</option>
+                    <option value="ingreso">Ingreso</option>
+                    <option value="egreso">Egreso</option>
+                </select>
+
+                <div class="my-5 relative h-11 w-[15rem]">
+                    <input
+                    class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                    placeholder=" "
+                    />
+                    <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-blue-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-blue-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-blue-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                    >
+                    Monto
+                    </label>
+                </div>
+
+                <div class="my-5 relative h-11 w-[15rem] min-w-[200px] ">
+                    <input
+                    class="peer h-full w-full rounded-md border border-blue-gray-200 bg-transparent px-3 py-3 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-blue-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
+                    placeholder=" "
+                    />
+                    <label
+                    class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-blue-gray-400 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[4.1] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-blue-500 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-blue-500 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-blue-500 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"
+                    >
+                    Descripcion
+                    </label>
+                </div>
+            </div>
+
+
+
+            <div id="secondo" class="flex p-[2rem] justify-center flex-col gap-5">
+
+                <label for="toggleTransactionType" class="inline-flex items-center p-0 rounded-md cursor-pointer dark:text-gray-800">
+                    <input id="toggleTransactionType" type="checkbox" class="hidden peer">
+                    <span class="px-11 py-4 rounded-l-md dark:bg-blue-400 peer-checked:dark:bg-gray-300">Ingresos</span>
+                    <span class="px-11 py-4 rounded-r-md dark:bg-gray-300 peer-checked:dark:bg-blue-400">Egresos</span>
+                </label>
+
+
+                <div class="flex space-x-40 border-2 border-black p-4">
+                    <h1 class="flex">Salario 1 <h1>+ 400</h1></h1>
+                </div>
+
+                <div class='flex space-x-40 border-2 border-black p-4'>
+                    <h1>Salario 2 <h1>+ 400</h1></h1>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+    <script src="Index.js"></script>
+  </body>
+</html>
